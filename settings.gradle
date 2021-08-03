@@ -1,0 +1,2 @@
+rootProject.name = "kunny_gitsample"
+include ':app'

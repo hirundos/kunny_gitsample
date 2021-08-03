@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    >
+
+    <ImageView
+        android:id="@+id/ivItemRepositoryProfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher_background"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toEndOf="@id/ivItemRepositoryProfile"
+        android:layout_toRightOf="@id/ivItemRepositoryProfile"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/tvItemRepositoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/githubBlack"
+        android:text="Owner/Repository"
+    />
+    <TextView
+        android:id="@+id/tvItemRepositoryLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        />
+    </LinearLayout>
+</RelativeLayout>
